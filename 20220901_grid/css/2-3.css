@@ -1,0 +1,51 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+    max-width: 800px;
+    height: 400px;
+}
+.grid-item{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.grid-item:nth-child(11){
+    grid-row: 2 / 4;
+    grid-column: 5; /*5열부터 6열까지지만 5만 써도 댐*/
+}
+.grid-item:nth-child(19){
+    grid-row: 4/6;
+    grid-column: 2;
+}
+.grid-item:nth-child(21){
+    grid-row: 4/6;
+    grid-column: 4;
+}
+.grid-item:nth-child(22){
+    grid-row: 4/6;
+    grid-column: 5;
+}
+.grid-item:nth-child(28){
+    grid-row: 6/8;
+    grid-column: 2;
+}
+.grid-item:nth-child(29){
+    grid-row: 6/8;
+    grid-column: 3;
+}
+.grid-item:nth-child(32){
+    grid-row: 6/8;
+    grid-column: 6;
+}
