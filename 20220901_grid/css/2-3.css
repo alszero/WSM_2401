@@ -1,26 +1,35 @@
+h1{
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    color: coral;
+}
 .grid-container{
     display: grid;
     grid-template-columns: 80px repeat(5, 1fr);
     max-width: 800px;
     height: 400px;
+    color: rgb(255, 138, 117);
+}
+.days-of-the-week {
+    background-color: coral;
+    color: white;
+}
+.period{
+    background-color: coral;
+    color: white;
 }
 .grid-item{
-    border: 1px solid black;
+    border: 1px solid coral;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.grid-item{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.grid-item:nth-child(1){
+    border-style: none;
 }
-
-
 .grid-item:nth-child(11){
     grid-row: 2 / 4;
     grid-column: 5; /*5열부터 6열까지지만 5만 써도 댐*/
@@ -48,4 +57,8 @@
 .grid-item:nth-child(32){
     grid-row: 6/8;
     grid-column: 6;
+}
+.grid-item:nth-child(34){
+    grid-row: 7/9;
+    grid-column:4;
 }
