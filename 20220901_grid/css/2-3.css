@@ -9,7 +9,7 @@ h1{
     grid-template-columns: 80px repeat(5, 1fr);
     max-width: 800px;
     height: 400px;
-    color: rgb(255, 138, 117);
+    color: rgb(255, 95, 37);
 }
 .days-of-the-week {
     background-color: coral;
@@ -20,7 +20,7 @@ h1{
     color: white;
 }
 .grid-item{
-    border: 1px solid coral;
+    border: 1px solid rgb(255, 95, 37);
     display: flex;
     justify-content: center;
     align-items: center;
