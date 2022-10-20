@@ -81,9 +81,21 @@ const urlToJSON = (url) => {
                         if(json['mealServiceDietInfo'][0]['head'][1]['RESULT']['CODE']=='INFO-000'){
                                 //응답이 제대로 왔으면
                                 //json -> HTML
-                                breakfast.innerHTML = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM']; //조식
-                                lunch.innerHTML = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM']; //중식
-                                dinner.innerHTML = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM']; //석식
+                                try{
+                                        breakfast.innerHTML = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM']; //조식
+                                }catch{
+                                        breakfast.innerHTML = "없응"
+                                }
+                                try{
+                                        lunch.innerHTML = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM']; //중식
+                                }catch{
+                                        lunch.innerHTML = "없응"
+                                }
+                                try{
+                                        dinner.innerHTML = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM']; //중식
+                                }catch{
+                                        dinner.innerHTML = "없응"
+                                }
                         }else{
                                 //응답이 이상하면
                                 //없음 표시하자
